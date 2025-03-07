@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url(2.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background-color: #ffc8dd;
+    background-image: url(heart.png);
+    background-size: 20%;
+    image-rendering: pixelated;
+}
+
+.shell{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 350px;
+    height: 250px;
+}
+.catletter{
+    background-color: transparent;
+    position: absolute;
+    width: auto;
+    height: 150px;
+    bottom: 40px;
+}
+
+
+    .container.active{
+        transition: transform 1s;
+        transform: translate(1000px,-50%);
+    }
+
+
+    .nameline{
+        text-align: center;
+        align-content: center;
+        background-color:#cdb4db;
+        height: 25%;
+        width: 100%;
+        right: 0;
+        top: 0;
+        position: absolute;
+    }
+    .nameline a{
+        color: white;
+        font-size: 18pt;
+        font-family: "Pixel", sans-serif;
+        font-optical-sizing: auto;
+        font-style: ita;
+        margin-left: 10px;
+    }
+    
+    #continue{
+        background-color: transparent;
+        border: transparent;
+    
+        background-size: cover;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+    #continue img{
+        width: 150px;
+        height: auto;
+    }
+    .promtbtn{
+        align-self: center;
+        display:grid;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16pt;
+        font-family: "Pixel", sans-serif;
+        position: absolute;
+        top: 105px;
+        right: 50px;
+        color: black;
+        width: 120px;
+        height: 100px;
+    }
+    .promtbtn a{
+        color: #463a4d;
+    }
+    
+
+.letter{
+    text-align: justify;
+    font-size: 14pt;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    display: none;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1000px,-50%);
+    color: #463a4d;
+    background-color: white;
+    width: 90%;
+    height: auto;
+}
+.letter.active{
+    transition: transform 1s;
+    transform: translate(-50%,-50%);
+}
+
+.logo{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+}
+.logo a{
+    position: relative;
+    font-size: 17pt;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+.logo img{
+    margin-inline: 3px;
+    transform: translateY(20%);
+}
+.end{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align:center;
+    align-content:center;
+}
+.end img{
+    height: auto;
+    width: 80px;
+    transform: translateY(25%);
+    margin-inline: 10px;
+}
+
